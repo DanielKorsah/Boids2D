@@ -1,7 +1,8 @@
 const boids = [];
 
 function setup() {
-    createCanvas(800, 800);
+    canv = createCanvas(800, 800);
+    canv.parent("sketchContainer");
     for (let i = 0; i < 100; i++) {
         boids.push(new Boid());
     }
